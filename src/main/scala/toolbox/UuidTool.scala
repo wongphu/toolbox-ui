@@ -12,7 +12,20 @@ class UuidTool() {
     idAttr("uuid"),
     cls("block"),
     h1("Generate UUID"),
-    child.text <-- uuidVar,
+    div(
+      cls("hbox"),
+      code(
+        idAttr("uuidText"),
+        cls("border"),
+        cls("text-align:center"),
+        child.text <-- uuidVar,
+      ),
+      button(
+        cls("copy-button"),
+        img(src("copy.png")),
+        onClick --> { _ => Native.copyToClipboard("uuidText") }
+      )
+    ),
     br(),
     button(
       "more",
