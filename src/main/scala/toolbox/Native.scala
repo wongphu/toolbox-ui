@@ -2,7 +2,7 @@ package toolbox
 
 import org.scalajs.dom.Blob
 import scala.scalajs.js
-import js.annotation._
+import js.annotation.*
 
 object Native {
   @js.native

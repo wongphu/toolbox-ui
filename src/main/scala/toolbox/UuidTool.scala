@@ -1,6 +1,6 @@
 package toolbox
 
-import com.raquo.laminar.api.L._
+import com.raquo.laminar.api.L.*
 import java.util.UUID
 
 class UuidTool() {
